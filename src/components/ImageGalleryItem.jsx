@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const ImageGalleryItem = ({ image, onClick }) => (
   <li className="gallery-item" onClick={() => onClick(image)}>
-    <img src={image.webformatURL} alt="" />
+    <img className = "gallery-item-img" src={image.webformatURL} alt="" />
   </li>
 );
 
