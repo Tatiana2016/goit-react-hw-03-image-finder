@@ -62,7 +62,7 @@ const App = () => {
       {isLoading ? (
         <Loader type="Puff" color="#00BFFF" height={100} width={100} size={50} />
       ) : (
-        <Button onClick={handleLoadMore} disabled={isLoading || images.length === 0} />
+        images.length > 0 && <Button onClick={handleLoadMore} disabled={isLoading} />
       )}
       <Modal isOpen={selectedImage !== null} onClose={handleCloseModal} image={selectedImage} />
     </div>
